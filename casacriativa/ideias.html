@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Casa criativa-Ideias</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/public/style.css">
+    <link rel="icon" href="https://www.flaticon.com/svg/vstatic/svg/2966/2966465.svg?token=exp=1614042413~hmac=7ad8fc4a7f9a06878593e0c7c7d22101">
+</head>
+
+<body id="page-ideas">
+    <div id="container">
+        <header>
+            <a href="index.html"><img src="/public/logo.png" alt=""></a>
+            <nav>
+                <li>
+                    <a href="index.html"> 
+                        Início 
+    
+                    </a>
+                </li>
+                <li>
+                    <a class="button" href="#" onclick="onOff()"> 
+                                Nova Ideia 
+                    </a>
+                </li>
+            </nav>
+        </header>
+        <section id="title">
+            <p>em exibição</p>
+            <h1>Ideias</h1>
+        </section>
+        <main>
+            <section id="ideas">
+                <div class="idea">
+                    <img src="https://www.flaticon.com/svg/vstatic/svg/394/394127.svg?token=exp=1614039613~hmac=77a17c57d79fafd204b5aadbef82e7f0" alt="">
+                    <div class="content">
+                        <h3>Games</h3>
+                        <p>Diversão</p>
+                        <div class="description">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio illum iste iusto ullam eveniet minus aut. Reiciendis obcaecati quam rerum fugit voluptate consequuntur id soluta, rem inventore quia dolorum cum!
+                        </div>
+                        <a href="ideias.html"> Ir para a ideia </a>
+                    </div>
+                </div>
+                <div class="idea">
+                    <img src="https://www.flaticon.com/svg/vstatic/svg/747/747022.svg?token=exp=1614040265~hmac=a8c50c12ed5df6d9da22f194a4332539" alt="">
+                    <div class="content">
+                        <h3>Cursos</h3>
+                        <p>Estudo</p>
+                        <div class="description">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio illum iste iusto ullam eveniet minus aut. Reiciendis obcaecati quam rerum fugit voluptate consequuntur id soluta, rem inventore quia dolorum cum!
+                        </div>
+                        <a href="ideias.html"> Ir para a ideia </a>
+                    </div>
+                </div>
+                <div class="idea">
+                    <img src="https://www.flaticon.com/svg/vstatic/svg/1507/1507409.svg?token=exp=1614040299~hmac=35f0d5e32f6283730ebbb292e0df262a" alt="">
+                    <div class="content">
+                        <h3>Descanse o psicológico</h3>
+                        <p>Descanso</p>
+                        <div class="description">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio illum iste iusto ullam eveniet minus aut. Reiciendis obcaecati quam rerum fugit voluptate consequuntur id soluta, rem inventore quia dolorum cum!
+                        </div>
+                        <a href="ideias.html"> Ir para a ideia </a>
+                    </div>
+                </div>
+                <div class="idea">
+                    <img src="https://www.flaticon.com/svg/vstatic/svg/1533/1533839.svg?token=exp=1614040327~hmac=6c8a03c2807b35ddad0f80a9d43a5c11" alt="">
+                    <div class="content">
+                        <h3>Dança</h3>
+                        <p>Dviersão</p>
+                        <div class="description">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio illum iste iusto ullam eveniet minus aut. Reiciendis obcaecati quam rerum fugit voluptate consequuntur id soluta, rem inventore quia dolorum cum!
+                        </div>
+                        <a href="ideias.html"> Ir para a ideia </a>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <p id="footer">Desenvolvido por <a href="">Leonardo Rezende</a></p>
+        </footer>
+    </div>
+    <div id="modal" class="hide">
+        <div class="content">
+            <h1> Nova Ideia </h1>
+            <form action="/" method="POST" onsubmit="return checkFields(event)">
+
+                <div class="input-wrapper">
+                    <label for="title"> Título da Ideia </label>
+                    <input type="text" name="title">
+                </div>
+
+                <div class="input-wrapper">
+                    <label for="category"> Categoria </label>
+                    <input type="text" name="category">
+                </div>
+
+                <div class="input-wrapper">
+                    <label for="image"> Link da Imagem </label>
+                    <input type="url" name="image">
+                </div>
+
+                <div class="input-wrapper">
+                    <label for="description"> Digite uma Descrição para essa Ideia </label>
+                    <textarea name="description" cols="30" rows="10"></textarea>
+                </div>
+
+                <div class="input-wrapper">
+                    <label for="link"> Link da Ideia </label>
+                    <input type="url" name="link">
+                </div>
+
+                <a href="#" onclick="onOff()"> Voltar </a>
+                <button> Salvar </button>
+
+            </form>
+        </div>
+    </div>
+
+    <script src="/public/scripts.js"></script>
+</body>
+
+</html>
